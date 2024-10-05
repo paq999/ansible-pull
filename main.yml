@@ -1,8 +1,5 @@
 ---
 - hosts: localhost
   tasks:
-    - name: Install htop
-      apt:
-        name: htop
-        state: present
-      become: yes
+    - ansible.builtin.include_tasks: tasks/main.yml
+        

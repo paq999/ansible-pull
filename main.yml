@@ -1,6 +1,5 @@
 ---
 - hosts: localhost
   tasks:
-    - ansible.builtin.include_tasks: 
-        file: main.yml
+    - include: tasks/main.yml
         

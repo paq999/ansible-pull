@@ -4,5 +4,5 @@
     - name: Install htop
       apt:
         name: htop
-        state: absent
+        state: present
       become: yes
